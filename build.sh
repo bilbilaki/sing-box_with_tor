@@ -1,7 +1,7 @@
 set -xe
 
-SINGBOX_VERSION=v1.2-beta7
-SINGBOX_TAGS=with_wireguard,with_clash_api,with_gvisor,with_embedded_tor
+SINGBOX_VERSION=v1.2-beta8
+SINGBOX_TAGS=with_wireguard,with_clash_api,with_gvisor,with_embedded_tor,with_acme
 
 # build sing-box
 git clone https://github.com/SagerNet/sing-box -b ${SINGBOX_VERSION} --depth 1
