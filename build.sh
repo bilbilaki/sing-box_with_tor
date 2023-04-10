@@ -1,12 +1,12 @@
 set -xe
 
-SINGBOX_VERSION=v1.2.3
-SINGBOX_TAGS=with_wireguard,with_clash_api,with_gvisor,with_embedded_tor,with_acme,with_quic
+SINGBOX_VERSION=v1.3-beta4
+SINGBOX_TAGS=with_wireguard,with_clash_api,with_gvisor,with_acme,with_quic
 
 # build sing-box
 git clone https://github.com/SagerNet/sing-box -b ${SINGBOX_VERSION} --depth 1
 cd sing-box
-export CGO_ENABLED=1
+export CGO_ENABLED=0
 
 go build -trimpath -tags ${SINGBOX_TAGS} \
         -o /usr/bin/sing-box \
