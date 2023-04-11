@@ -1,6 +1,6 @@
 set -xe
 
-SINGBOX_VERSION=v1.2.2
+SINGBOX_VERSION=v1.2.1
 SINGBOX_TAGS=with_wireguard,with_clash_api,with_gvisor,with_acme,with_quic
 
 # build sing-box
